@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: black;
+}
+
+table {
+    border-collapse: collapse; /* Aceasta combina marginile celulelor */
+    color: white;
+}
+
+td, th {
+    border: 3px solid transparent; /* Asigură că toate celulele au o margine de 1px, dar transparentă */
+    height: 200px;
+    width: 200px;
+    font-size: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Setează marginile interioare ale celulelor vizibile */
+td:not(:first-child),
+th:not(:first-child) {
+    border-left-color: white; /* Marginea stângă a celulelor */
+}
+
+td:not(:last-child),
+th:not(:last-child) {
+    border-right-color: white; /* Marginea dreaptă a celulelor */
+}
+
+tr:not(:first-child) td,
+tr:not(:first-child) th {
+    border-top-color: white; /* Marginea superioară a celulelor */
+}
+
+tr:not(:last-child) td,
+tr:not(:last-child) th {
+    border-bottom-color: white; /* Marginea inferioară a celulelor */
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
